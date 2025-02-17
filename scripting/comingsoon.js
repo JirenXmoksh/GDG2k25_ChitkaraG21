@@ -5,7 +5,7 @@ const countDownDate = () => {
         return parseInt(savedDate);
     } else {
         const date = new Date();
-        date.setMonth(date.getMonth() + 3);
+        date.setMonth(date.getMonth() + 5);
         const newDate = date.getTime();
         localStorage.setItem('countDownDate', newDate.toString());
         return newDate;
